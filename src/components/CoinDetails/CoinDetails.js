@@ -28,7 +28,7 @@ const CoinDetails = () => {
 
                 </div>
                 <div className='flex justify-center items-center order-1 md:order-2'>
-                    <img className='' src={coin?.image?.large} alt="" />
+                    <img src={coin?.image?.large} alt="" />
                 </div>
             </div>
           
