@@ -16,8 +16,7 @@ const Coins = () => {
     }, [])
     return (
         <>
-            {
-                loading ? <Spinner></Spinner> : <div className='px-4 pt-20 pb-24 mx-auto max-w-7xl md:px-2'>
+            <div className='px-4 pt-20 pb-24 mx-auto max-w-7xl md:px-2'>
                     <p className='text-center text-3xl font-bold text-gray-700'>Available crypto Currencies</p>
                     <p className='text-center mb-12 text-xl font-normal tnxt-gray-500'>Total Coins: {coins.length}</p>
 
@@ -26,8 +25,8 @@ const Coins = () => {
                             coins.map(coin => <CoinCard coin={coin} key={coin.id}></CoinCard>)
                         }
                     </div>
-                </div>
-            }
+             </div>
+            
         </>
     );
 };
